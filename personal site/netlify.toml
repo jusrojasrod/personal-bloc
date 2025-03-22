@@ -1,0 +1,12 @@
+[build]
+  command = "bun run build"
+  publish = ".next"
+
+[functions]
+  node_bundler = "esbuild"
+
+[images]
+  remote_images = ["https://ext.same-assets.com/**"]
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
